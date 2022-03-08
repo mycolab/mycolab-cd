@@ -24,4 +24,4 @@ spec:
         - --domain-filter={{ .Values.domain }}
         - --provider={{ .Values.provider }}
         - --registry=txt
-        - --txt-owner-id=my-identifier
+        - --txt-owner-id=external-dns
