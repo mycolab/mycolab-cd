@@ -48,7 +48,7 @@ ingress:
   hosts:
     - host: mycolab.org
       paths:
-      - path: /api/genbank
+      - path: /api/genbank/
         backend:
           serviceName: genbank
           servicePort: 80
