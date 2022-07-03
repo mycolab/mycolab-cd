@@ -52,6 +52,10 @@ ingress:
         backend:
           serviceName: mycolab-ui
           servicePort: 80
+      - path: /api/genbank
+        backend:
+          serviceName: genbank
+          servicePort: 80
   tls:
     - secretName: mycolab-cert-tls
       hosts:
