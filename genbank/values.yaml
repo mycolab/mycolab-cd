@@ -52,6 +52,10 @@ ingress:
         backend:
           serviceName: genbank
           servicePort: 80
+  tls:
+    - secretName: mycolab-cert-tls
+      hosts:
+        - mycolab.org
 
 resources: {}
   # We usually recommend not to specify default resources and to leave this as a conscious
