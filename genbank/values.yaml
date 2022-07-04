@@ -45,11 +45,11 @@ ingress:
   annotations:
     kubernetes.io/ingress.class: nginx
     kubernetes.io/tls-acme: "true"
-    ingress.kubernetes.io/rewrite-target: /v1/ui
+    ingress.kubernetes.io/rewrite-target: /$2
   hosts:
     - host: mycolab.org
       paths:
-      - path: /api/genbank
+      - path: /api/genbank(/|$)(.*)
         pathType: Prefix
         backend:
           serviceName: genbank
